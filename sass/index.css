@@ -1,0 +1,455 @@
+@charset "UTF-8";
+@import '~node_modules/modern-normalize/modern-normalize.css';
+.big-btn, .link-btn, .dark-btn, .btn {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Regular.woff), url(../fonts/Montserrat-Regular.ttf);
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Light.woff), url(../fonts/Montserrat-Light.ttf);
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Medium.woff), url(../fonts/Montserrat-Medium.ttf);
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-SemiBold.woff), url(../fonts/Montserrat-SemiBold.ttf);
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Bold.woff), url(../fonts/Montserrat-Bold.ttf);
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FilmP3";
+  src: url(../fonts/FilmP3Bold.woff), url(../fonts/FilmP3Bold.ttf);
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TimesNewRoman";
+  src: url(../fonts/TimesNewRomanPSMT.woff), url(../fonts/TimesNewRomanPSMT.ttf);
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TimesNewRoman";
+  src: url(../fonts/TimesNewRomanPS-BoldMT.woff), url(../fonts/TimesNewRomanPS-BoldMT.ttf);
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+body {
+  font-family: "Montserrat", "sans-serif";
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  display: block;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.container {
+  min-width: 320px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 414px) {
+  .container {
+    max-width: 414px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    padding: 0 47px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 85px;
+  }
+}
+
+.logo {
+  font-family: "FilmP3", "sans-serif";
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+}
+@media screen and (min-width: 1024px) {
+  .logo {
+    font-size: 64px;
+  }
+}
+
+.btn {
+  min-width: 236px;
+  height: 48px;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #f3c653;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  transition-property: background-color;
+}
+.btn:hover, .btn:focus {
+  background-color: #ffffff;
+}
+
+.dark-btn {
+  background-color: #000000;
+  border: 2px solid #FFFDEE;
+  transition-property: background-color, border-color;
+}
+.dark-btn:hover, .dark-btn:focus {
+  background-color: #ffffff;
+  border-color: #f3c653;
+}
+
+.link-btn {
+  display: block;
+  max-width: 236px;
+  height: 48px;
+  padding: 14px 65px;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #f3c653;
+  background-color: #000000;
+  border: 2px solid #FFFDEE;
+  border-radius: 25px;
+  transition-property: background-color, border-color;
+}
+.link-btn:hover, .link-btn:focus {
+  background-color: #ffffff;
+  border-color: #f3c653;
+}
+
+.big-btn {
+  width: 100%;
+  height: 64px;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.22;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #000000;
+  border: 1px solid #f3c653;
+  border-radius: 25px;
+  transition-property: color, background-color;
+}
+@media screen and (min-width: 414px) {
+  .big-btn {
+    min-width: 384px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .big-btn {
+    width: 434px;
+    font-size: 24px;
+    line-height: 1.2;
+  }
+}
+.big-btn:hover, .big-btn:focus {
+  color: #000000;
+  background-color: #f3c653;
+}
+
+.submit {
+  border-radius: 2px;
+}
+@media screen and (min-width: 1024px) {
+  .submit {
+    width: 592px;
+  }
+}
+
+.subtitle {
+  font-family: "TimesNewRoman", "sans-serif";
+  font-weight: 400;
+  line-height: 1.15;
+  color: #b4b4b4;
+  font-size: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .subtitle {
+    font-size: 32px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.modal {
+  outline: 1px solid red;
+  width: 414px;
+  height: 572px;
+  padding: 60px 15px;
+  position: relative;
+}
+@media screen and (min-width: 1024px) {
+  .modal {
+    width: 712px;
+    height: 489px;
+    padding: 60px;
+  }
+}
+
+.close-modal {
+  display: flex;
+  position: absolute;
+  cursor: pointer;
+  top: 16px;
+  right: 16px;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* .social-icons__icon {} */
+.price-title {
+  margin-bottom: 40px;
+  text-align: center;
+  color: #000000;
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.15;
+}
+@media screen and (min-width: 1024px) {
+  .price-title {
+    font-size: 32px;
+  }
+}
+
+.room {
+  margin-bottom: 28px;
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+  color: #808080;
+}
+
+.category {
+  margin-bottom: 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #C79002;
+}
+
+.dddqqq {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 1024px) {
+  .dddqqq {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.ddd:not(:last-child) {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .ddd:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+.ddd {
+  display: flex;
+  flex-direction: column;
+  width: 384px;
+}
+@media screen and (min-width: 1024px) {
+  .ddd {
+    width: 288px;
+  }
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.label-modal {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #C79002;
+}
+
+.ddd.arrow {
+  position: relative;
+}
+
+@media screen and (min-width: 1024px) {
+  .ddd.arrow::after {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    /* // тут потрібно прописати шлях до свгшки
+    background: white; */
+    pointer-events: none;
+  }
+}
+
+.monet-input {
+  height: 54px;
+  margin-bottom: 8px;
+  padding: 0 15px;
+  border: 1px solid #C79002;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+  color: #808080;
+}
+@media screen and (min-width: 1024px) {
+  .monet-input {
+    height: 60px;
+    padding: 0 12px;
+  }
+}
+
+.monet-input:hover,
+.monet-input:focus {
+  border: 1px solid #C79002;
+  outline: transparent;
+}
+
+.submit-button-box {
+  text-align: center;
+}
+
+.submit {
+  display: inline-block;
+  padding: 18px 0;
+  width: 384px;
+  height: 64px;
+}
+@media screen and (min-width: 1024px) {
+  .submit {
+    width: 592px;
+  }
+}/*# sourceMappingURL=index.css.map */
