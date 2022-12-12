@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Домашнє завдання №8</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+
+<body>
+    <div class="modal">
+        <button class="close-modal" type="button">
+            <svg width="22" height="22" class="social-icons__icon">
+                <use href=""></use>
+            </svg>
+        </button>
+        <h2 class="price-title">ЦІНИ НА НОМЕР</h2>
+        <p class="room">Двомісний люкс</p>
+        <p class="category">Категорія номеру</p>
+
+        <form class="modal-form">
+            <ul class="dddqqq">
+                <li class="ddd arrow">
+                    <select class="nights-value" id="nights">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <label class="label-modal" for="nights">Кількість ночей</label>
+                </li>
+
+                <li class="ddd">
+                    <input placeholder="1000" class="monet-input" id="money" type="text" pattern='[0-9] {, 4}' />
+                    <label class="label-modal" for="money">грн</label>
+                </li>
+            </ul>
+
+            <div class="submit-button-box">
+                <button class="submit" type="submit">ЗАБРОНЮВАТИ НОМЕР</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
